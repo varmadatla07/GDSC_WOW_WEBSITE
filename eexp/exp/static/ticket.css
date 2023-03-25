@@ -1,0 +1,192 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.ticket{
+    background-color: rgb(31, 30, 30);
+    height: 55vh;
+    margin-bottom: 1vh;
+}
+.download{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height: 5vw;
+    width: 5vw;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 5vw;
+    opacity: 0.2;
+    filter: blur(1px);
+}
+.binary{
+    height: 5vw;
+    width: 5vw;
+    background-image: url(binary-code\ white.png);
+    background-repeat: no-repeat;
+    background-size: 5vw;
+    opacity: 0.2;
+    filter: blur(1px);
+    position: absolute;
+    margin-left: 60vw;
+}
+.left{
+    position: absolute;
+    height: 55vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.red-circle{
+    width: 3.5vw;
+    height: 7vw;
+    background-image: radial-gradient(transparent 40%, #e124249e);
+    border-top-right-radius: 3.5vw;
+    border-bottom-right-radius: 3.5vw;
+    position: absolute;
+    margin-bottom: 12vw;
+}
+.instruction-text{
+    color: #f4af1b;
+    padding: 1vw;
+}
+.github{
+    height: 5vw;
+    width: 5vw;
+    background-image: url(github.png);
+    background-repeat: no-repeat;
+    background-size: 5vw;
+    opacity: 0.2;
+    filter: blur(1px);
+    position: absolute;
+    margin-bottom: 5vh;
+}
+.logos{
+    width: 60vw;
+    display: flex;
+}
+.gdsclogo{
+    width: 10vw;
+    position: absolute;
+    margin: 1vw;
+}
+.gdsc span{
+    color: rgba(255, 255, 255, 0.638);
+    position: absolute;
+    margin-top: 4vw;
+    margin-left: 3.3vw;
+    font-size: 0.8vw;
+}
+
+.green-circle{
+    width: 7vw;
+    height: 3.5vw;
+    background-image: radial-gradient(transparent 40%, rgba(31, 233, 31, 0.685));
+    border-bottom-left-radius: 3.5vw;
+    border-bottom-right-radius: 3.5vw;
+    position: absolute;
+    margin-left: 35vw;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.texts{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+}
+#wow{
+    margin-left: 7vw;
+    width: 25vw;
+}
+
+.name{
+    font-size: 1vw;
+}
+
+.ltgt{
+    width: 5vw;
+}
+
+span{
+    text-align: center;
+}
+#heading{
+    color: #f4af1b;
+    font-size: 1.5vw;
+}
+#description{
+    color: #56DA9A;
+    font-size: 1.2vw;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+}
+.qr-code{
+    width: 15vw;
+    height: 15vw;
+}
+.qr{
+    width: 18vw;
+    height: 18vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.yellow{
+    width: 0.7vw;
+    height: 55vh;
+    background-image: linear-gradient(transparent, #f4af1b 40%);
+    margin-right: 0.5vw;
+}
+.green{
+    width: 0.7vw;
+    height: 55vh;
+    background-image: linear-gradient(#24e186 40% ,transparent);
+    margin-left: 0.5vw;
+}
+.red{
+    width: 50vw;
+    height: 0.7vw;
+    background-image: linear-gradient(to left, #e12424 60%,transparent);
+    position: absolute;
+    margin-bottom: 20vw;
+    margin-left: 49vw;
+}
+
+.blue{
+    width: 50vw;
+    height: 0.7vw;
+    background-image: linear-gradient(to left, blue, transparent);
+    margin-left: 0.5vw;
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 49vw;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.ticket-ID{
+    position: absolute;
+    margin-bottom: 45vh;
+    color: rgb(255, 255, 255);
+    margin-left: 5.8vw;
+    font-size: 1vw;
+}
+.ticketID{
+    color: #f4af1b;
+}

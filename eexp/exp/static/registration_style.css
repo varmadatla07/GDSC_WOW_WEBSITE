@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    display: flex;
+}
+.form{
+    background-color: #292D33;
+    height: 100vh;
+    color: white;
+    width: 40vw;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header1{
+    display: flex;
+    justify-content:center;
+    height: 10vh;
+}
+.header2{
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+    margin-left: 3vw;
+}
+.gdsc_logo{
+    display: flex;
+    align-items:end;
+    margin-bottom: 0.38vw;
+    margin-right: 0.658vw;
+    
+}
+.image{
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 128, 255, 0.395);
+}
+.form form{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    border-radius: 0.658vw;
+    background-color: rgba(85, 85, 95, 0.59);
+    background-image: url(logo.png);
+    background-size: 35.55vw;
+    background-position: center;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.304vw;
+}
+.gdsc-text{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+h2{
+    font-size: 1.5vw;
+}
+h3{
+    font-size: 1.15vw;
+}
+label{
+    font-size: 0.89vw;
+}
+
+.f-name, .l-name, .number, .email, .college{
+    width: 17vw;
+    height: 4vh;
+    border-radius: 17px;
+    padding-left: 0.658vw;
+    padding-right: 0.658vw;
+    background-color: #292d3363;
+    color: white;
+    font-size: 1.185vw;
+}
+.branch{
+    width: 18.3vw;
+    padding: 5px;
+    border-radius: 17px;
+    text-align: center;
+    background-color: #292d3363;
+    color: white;
+    font-size:1.1vw;
+}
+.question{
+    width: 12vw;
+    color: white;
+    font-size:1.185vw;
+    margin-right: 2vw;
+}
+input[type='radio']:after {
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #292d3363;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position:static;
+    background-color: #292727;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid grey;
+}
+#yes, #no{
+    margin-right: 0.6vw;
+}
+
+.addr{
+    border-radius: 20px;
+    width: 17vw;
+    height: 8vh;
+    background-color: #292d3363;
+    color: white;
+    padding: 0.658vw;
+}
+.upload, .verify, .submit{
+    width: 7vw;
+    height: 4vh;
+    border:1px solid black;
+    border-radius: 17px;
+    padding-left: 0.658vw;
+    padding-right: 0.658vw;
+    background-color: #292d3363;
+    color: rgb(231, 225, 225);
+    font-size: 1.1vw;
+}
+.verify{
+    margin-left: 17.3vw;
+}
+button:hover{
+    background-color: #292d33e3;
+    color: #c2bfbf;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.upload{
+    margin-left: 14.3vw;
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+}
+.tnc{
+    accent-color: #292d3363;
+}
+
+.display{
+    display: flex;
+    justify-content: space-between;
+}

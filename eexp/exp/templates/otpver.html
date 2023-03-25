@@ -1,0 +1,134 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wow Registration Form</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" media="screen and (min-width: 912px)" href="{% static 'reg.css'%}">
+    <link rel="stylesheet" media="screen and (max-width: 912px)" href="{% static 'trialo.css'%}">
+    <script src="{% static 'TC.js' %}"></script> 
+    
+</head>
+<body>
+    <div class="image">
+        <h1>Illustrated Gif</h1>
+    </div>
+    <div class="forms">
+        <div class="header">
+            <div class="header1">
+                <div class="gdsc_logo">
+                    <img src="GDSC__logo.png" alt="&lt;&gt;" height="25vw">
+                </div>
+                <div class="gdsc-text">
+                    <h2>Google Developer Student Clubs</h2>
+                </div>
+            </div>
+            <div class="header2">
+                <h3>Visakhapatnam, Andhra Pradesh</h3>
+            </div>
+
+        </div>
+        <div class="b">
+            <form action="{% url 'send_otp'%}" method="post">
+                {% csrf_token %}
+            <div class="fname display">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" class="f-name" required>
+            </div>
+            <div class="lname display">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" class="l-name" required>
+            </div>
+            <div class="phone display">
+                <label for="phone">Whatsapp Number</label>
+                <input type="tel" name="phone" id="phone" class="number" required>
+            </div>
+            <div class="mail display">
+                <label for="mail">Email</label>
+                <input type="email" name="mail" id="mail" class="email" required>
+            </div>
+            <button class="verify" onclick="on2()">verify</button>
+            <div class="college-name display">
+                <label for="college">College or Institution</label>
+                <input type="text" name="college" id="college" class="college" required>
+            </div>
+            <div class="field display">
+                <label for="branch">Branch</label>
+                <select name="branch" id="branch" class="branch" required>
+                    <option value="tech">Technical</option>
+                    <option value="non-tech">Non Technical</option>
+                </select>
+            </div>
+            <div class="gdsc display">
+                <label>Are you a GDSC member?</label>
+                <div class="question">
+                    <label for="member"></label>
+                    <input type="radio" name="member" id="yes"><label class="yes">Yes &ensp; &ensp;</label>
+                    <input type="radio" name="member" id="no"><label>No</label> 
+                </div>
+            </div>
+            <div class="address display">
+                <label for="address">Address</label><br>
+                <textarea name="address" id="address" cols="30" rows="5" class="addr" required></textarea>
+            </div>
+            <div class="photo">
+                <label for="pic">Photo</label>
+                <input type="file" id="myFile" name="filename">
+                <button class="upload">Upload</button>
+
+            </div>
+            <br>
+            <div class="terms">
+                <!-- <input type="checkbox" name="terms" class="tnc" required> -->
+                <p style="font-size:11px;">By submitting you accept to our <a onclick="on()" style="text-decoration: underline; cursor: pointer;">terms and conditions</a></p>
+                <!-- <label for="terms" onclick="on()" >Terms&Conditions</label> -->
+            </div>
+            <div class="submit-btn">
+                <button class="submit" onclick="on2()" >Submit</button>
+            </div>
+        </form></div>
+    </div>
+    <div class="modal" id="pop" onclick="winOff()">
+        <div align="center" class="modal-content">
+            <h1 style="color:rgb(255, 255, 255);font-family:Arial Rounded MT;text-align: center;font-size:95%;">TERMS & CONDITIONS</h1></br>
+            <textarea class="myBox" name="note" readonly >
+1. Car parking => From Girls hostel to Backgate. 
+2. Ticket cannot be resold.
+3. Bring college id card.
+4. Pass  to be shown at gate.
+5. Don’t bring any kind of intoxicants.
+6. Decent dress-code.
+7. Kindly cooperate with the authorities.
+8. Payment cannot be refunded.
+9. Event Organizers have full 
+            </textarea>
+            <button class="done" style="margin:2vh;" onclick="off()">Done</button>
+        </div>
+    </div>
+    <div class="modal2" id="pop2" onclick="On2()" style="display: block;">
+        <div align="center" class="modal-content2">
+            <h1 style="color:rgb(255, 255, 255);font-family:Arial Rounded MT;text-align: center;">OTP-Validation</h1></br>
+            <form action="{%url 'payment'%}" method="post">
+                {% csrf_token %}
+
+                    <label for="email" class="E">eMail: &nbsp;</label>
+                    <input type="tel" name="email" id="email" class="em" required>
+                    <p>{{error}}</p>
+
+                </br></br>
+                <button class="verify2" >Verify</button> 
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+{% endblock content %}
